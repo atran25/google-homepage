@@ -19,7 +19,7 @@ ul {
 
 li {
     display: inline;
-    margin: 16px;
+    margin: 0px 16px 0px 16px;
 }
 
 li:hover {
@@ -39,7 +39,16 @@ li:hover {
     display: flex;
     flex-direction: row;
     font-size: 12px;
-    
+}
+
+.navigation-header .navigation-right ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation-header .navigation-right .navigation-special {
+    display: flex;
+    align-items: center;
 }
 
 .content {
