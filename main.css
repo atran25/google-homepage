@@ -71,12 +71,13 @@ li:hover {
 }
 
 #searchbar {
-    width: 550px;
+    width: 40%;
     height: 35px;
     border-radius: 25px;
     text-indent: 40px;
     border: 1px solid #ccc;
     font-size: 14px;
+    flex-grow: 1;
 }
 
 #searchbar:focus {
@@ -142,4 +143,36 @@ img, input {
     background-color: rgb(235, 237, 240);
     padding: 16px;
     font-size: 12px;
+}
+
+@media (max-width: 600px) {
+    .site-footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .site-footer .footer-center {
+        display: flex;
+        flex-direction: row;
+        order: 1;
+        justify-content: center;
+        margin: 4px;
+    }
+    
+    .site-footer .footer-left {
+        display: flex;
+        flex-direction: row;
+        order: 2;
+        justify-content: center;
+        margin: 4px;
+    }
+
+    .site-footer .footer-right {
+        display: flex;
+        flex-direction: row;
+        order: 3;
+        justify-content: center;
+        margin: 4px;
+    }
 }
