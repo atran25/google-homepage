@@ -115,9 +115,11 @@ li:hover {
     opacity: 0.35;
 }
 
+
 .content #search:hover, #random:hover {
     cursor: pointer;
     border: 1px solid rgb(200, 200, 200);
+    padding: 11px;
 }
 
 
